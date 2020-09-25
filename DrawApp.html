@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Drawing App</title>
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h2>DRAWING APP</h2>
+        </header>
+        <div class="canvas-container">
+            <canvas id="canvas" width="500" height="500"></canvas>
+            <div class="download" id="download" download="image.png"><i class="fa fa-download fa-2x"></i></div>
+        </div>
+        <div class="toolbox">
+            <div class="brush">
+                <i id="plus" class="fa fa-plus fa-2x"></i>
+                <div id="size"></div>
+                <i id="minus" class="fa fa-minus fa-2x"></i>
+                <input type="color" name="color" id="color">
+            </div>
+            <div class="clear">
+                <i id="erase" class="fa fa-eraser fa-2x"></i>
+                <i id="clear" class="fa fa-trash fa-2x"></i>
+            </div>
+        </div>
+    </main>
+    <script src="Draw.js" type="text/javascript"></script>
+</body>
+</html>

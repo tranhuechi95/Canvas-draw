@@ -1,0 +1,81 @@
+* > {
+    box-sizing: margin-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas-container {
+    position: relative;
+}
+
+canvas {
+    margin-top: 3rem;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.download {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.toolbox {
+    background-color: white;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#size {
+    width: 30px;
+    font-size: 25px;
+}
+
+.toolbox div {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbox div > * {
+    padding-right: 10spx;
+}
+
+i {
+    width: 20px;
+    margin: 0 10px;
+    color: gray;
+    /* color: rgb(54, 106, 218); */
+    cursor: pointer;
+}
+
+i:active {
+    color: rgb(54, 106, 218);
+}
+
+.fa.fa-eraser.fa-2x.selected {
+    color: rgb(54, 106, 218);
+}
+
+input {
+    cursor: pointer;
+}
